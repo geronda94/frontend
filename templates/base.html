@@ -8,6 +8,16 @@
     <title>{{ title }}</title>
   </head>  
   <body>    
+    {% block menu %}
+    <div class="header">
+      <ul class="menu">
+        {% for i in menu %}
+          <li><a href="{{url_for(i.get('link'))}}">{{i.get('title')}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endblock %}
+
     {% block content %}
     <h1> {{title}}</h1>
     

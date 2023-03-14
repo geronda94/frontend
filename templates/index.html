@@ -1,7 +1,14 @@
 {% extends 'base.html' %}
-{% block content %}
-{{ super() }}
 
+{% block menu %}
+{{ super()}}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="vision">
+  {{super()}}
 <p>
   HTML (от англ. <span class="it">HyperText Markup Language — «язык гипертекстовой разметки»</span>)
   — стандартизированный язык гипертекстовой разметки документов для
@@ -35,4 +42,5 @@
   для управления поведением и содержанием веб-страниц. Также включение CSS в
   HTML описывает внешний вид и макет страницы.
 </p>
+</div>
 {% endblock %}
