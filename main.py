@@ -10,6 +10,12 @@ menu_dict = [
 app = Flask(__name__)
 
 
+@app.template_filter('static_url')
+def static_url_filter(file):
+    return url_for('static', filename=file)
+
+
+
 @app.route('/')
 def index():
     return render_template('index.html', title='HTML', menu=menu_dict)

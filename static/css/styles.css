@@ -4,16 +4,9 @@ span.it {
 }
 
 
-
-
-
- 
-
-
-
-
-
-
+p {
+  font-size: 13pt;
+}
 
 
 body {
@@ -46,13 +39,19 @@ body {
   text-decoration: none;
 }
 
-.menu li a:hover {
-  color: #fad999;
-  font-style: bold;
+.menu li a:hover{color: #feb31c;}
+
+.menu li a:active{
+  color: rgb(244, 249, 247);
+  font-size: 16pt;
+
 }
 
+a{color:#1a4358}
+p a:hover{color:  #feb31c;}
+p a:active{color: rgb(44, 8, 8);}
 
 
-div.vision {
+div.vision { 
     padding:10px;
 }
