@@ -1,10 +1,11 @@
-from flask import render_template, Flask, url_for
+from flask import redirect, render_template, Flask, request, url_for
 
 
 
 menu_dict = [
     {'title':'Главная','link':'index'},
     {'title':'О нас','link':'about'},
+    {'title':'Форма','link':'form'},
     {'title':'frame','link':'frame'}
 ]
 
@@ -34,8 +35,32 @@ def frame():
 
 
 
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
 
 
+
+@app.route('/form', methods=['POST', 'GET'])
+def form():
+    if request.method == 'POST':
+        name=request.form['name']
+        message = request.form['message']
+        return redirect (url_for('feedback', code=307, name=name, message=message))
+    
+    return render_template('form.html', title='Обратная связь', menu=menu_dict)
+
+
+@app.route('/feedback', methods=['GET','POST'])
+def feedback():
+    if request.method == 'POST':
+        name=request.form['name']
+        message = request.form['message']        
+    else:
+        name = request.args.get('name')
+        message = request.args.get('message')
+    
+    return render_template('abracadabra.html', name=name, text=message, menu=menu_dict, title='Ответ от формы')
 
 
 
