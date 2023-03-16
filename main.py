@@ -4,7 +4,8 @@ from flask import render_template, Flask, url_for
 
 menu_dict = [
     {'title':'Главная','link':'index'},
-    {'title':'О нас','link':'about'}
+    {'title':'О нас','link':'about'},
+    {'title':'frame','link':'frame'}
 ]
 
 app = Flask(__name__)
@@ -27,7 +28,9 @@ def about():
     return render_template('about.html', title='About us', menu=menu_dict)
 
 
-
+@app.route('/frame')
+def frame():
+    return render_template('frame.html', title='Frame', menu=menu_dict)
 
 
 

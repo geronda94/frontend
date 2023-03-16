@@ -14,6 +14,13 @@ body {
   padding: 0;
 }
 
+
+
+pre.pre {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 12pt;
+}
+
 .menu-header {
   background-color: #031108;
   display: flex;
