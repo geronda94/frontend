@@ -13,21 +13,56 @@ h1 {
 }
 
 #reg-form {
-  width: 350px;
+  width: 400px;
   margin: 20px auto 0 auto;
   padding: 10px;
   background: #fff;
   box-shadow: 5px 5px 10px #aaa;
 }
 
-input.textе, textarea {
+.textе input, textarea {
   border: 0;
-  border-bottom: #ccce5e solid 1px;
+  border-bottom: #eed324 solid 1px;
 }
 
-input.textе:focus, textarea:focus {
-  border-bottom: #ccce5e solid 1px important;
+.textе:active{
+  border: 0;
+  border-bottom: #eed324 solid 1px;
 }
+
+
+textarea{
+  font-size: 16px;
+  color: #096407;
+  max-width: 330px;
+  max-height: 100px;
+}
+
+.reg_button {
+  padding: 10px;
+  color:#f2d6a3;
+  background-color:#03111b;
+  border: #c7dae8 solid 1px; 
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.reg_button:hover {
+  background-color:#c7dae8 ;
+  color:#141008;
+  border: #03111b solid 1px;
+}
+
+.reg_button:active {
+  background-color:#2f3b3b;
+  color:#c7dae8 ;;
+  border: #c7dae8 solid 1px;
+}
+
+ #reg_control {
+  overflow: hidden;
+  margin-top:40px;
+ }
 
 span.it {
     font-style: italic;
@@ -56,6 +91,7 @@ pre.pre {
   justify-content: center;
   align-items: center;
   height: 60px;
+  padding: 0;
 }
 
 
@@ -72,9 +108,8 @@ pre.pre {
 }
 
 .menu-position {
-  background-color: rgba(10,10,10, 0.7);
-
-  padding: 10px;
+  background-color: rgba(10,10,10, 0.85);
+  padding: 10px 0;
   border-radius: 10px;
 }
 
@@ -97,6 +132,11 @@ pre.pre {
   color: rgb(244, 249, 247);
   font-size: 16pt;
 
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
 }
 
 a{color:#1a4358}

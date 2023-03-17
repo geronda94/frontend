@@ -1,55 +1,67 @@
 {% extends 'base.html' %}
 
 {% block menu %}
-    {{ super() }}
+{{ super() }}
 {% endblock menu %}
 
 
 {% block content %}
-    <div class="vision">
-        {{ super()  }}
-        <form id="reg-form" action="" method="post">
-            <input type="hidden" name="id" value="123456"
+<div class="vision">
+    {{ super() }}
+    <form id="reg-form" action="" method="post">
+        <ul>
+            <input type="hidden" name="id" value="123456">
+            <div class="textе">Имя: <input type="text" name="fio" value=""></div>
 
-            <table border="3">
-                <tr><td>Имя: </td><td><input type="text" name="fio" class="texte" value=""></td></tr><br>
-                <tr><td>Пол: </td><td><input type="radio" name="sex" value="1" checked>M
-                <input type="radio" name="sex" value="2">F</td></tr><br>
-                <tr><td>
+            <li>
+                <div>Пол: <input type="radio" name="sex" value="1" checked>M
+                    <input type="radio" name="sex" value="2">F
+                </div>
+            </li>
+
+            <li>
+                <div class="textе">
                     <p>Введите сообщение</p>
-                    <p><textarea name="message"  id="message" class="textе"  cols="30" rows="10"></textarea></p>
-                </td></tr>
-                <tr><td>Пароль: </td><td><input type="password" class="textе"  name="pass" value=""></td></tr><br>
-                <tr>
-                    <label for="agree-checkbox">
-                    <td colspan="2">
-                    <p><input type="checkbox" name="agree" id="agree-checkbox"> Регистрируясь вы принимаете пользовательсеое соглашение</p>
-                    </td></label>
-                </tr>
-                <tr>
-                    <p>
-                        <td>Выберите город</td><td></td>
-                        <select name="city">
-                            <option value="Moscow">Moscow</option>
-                            <option value="Kiev">Kiev</option>
-                            <option value="London">London</option>
-                            <option value="Chishinau">Chishinau</option>
-                        </select>
-                    </p></td>
-                </tr><br>
-                <tr><td><input type="submit" value="Зарегистрироваться"></td>
-                <td><input type="reset" value="Очистить форму"></td></tr>
-            </table>
-        
-        </form>
-    </div>
+                    <p><textarea name="message" id="message"  cols="30" rows="10"></textarea></p>
+                </div>
+            </li>
+
+            <li>
+                <div class="textе">Пароль:
+                    <input type="password" name="pass" value="">
+                </div>
+            </li>
+            
+
+
+            <li>
+                <label for="agree-checkbox">
+                    <p><input type="checkbox" name="agree" id="agree-checkbox"> Регистрируясь вы принимаете
+                        пользовательсеое соглашение</p>
+                </label>
+            </li>
+
+
+            <li>
+                <p>
+                    Выберите город
+                    <select name="city">
+                        <option value="Moscow">Moscow</option>
+                        <option value="Kiev">Kiev</option>
+                        <option value="London">London</option>
+                        <option value="Chishinau">Chishinau</option>
+                    </select>
+                </p>
+            </li>
+        </ul>
+
+        <div id="reg_control">
+            <div style="float:left"><input type="submit" class="reg_button" value="Зарегистрироваться"></div>
+            <div style="float:right"><input type="reset" class="reg_button" value="Очистить форму"></div>
+            <div style="clear:both"></div>
+        </div>
+
+    </form>
+</div>
 
 {% endblock content %}
-
-
-
-
-
-
-
-
