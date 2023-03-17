@@ -20,11 +20,14 @@ h1 {
   box-shadow: 5px 5px 10px #aaa;
 }
 
-input.text  {
+input.textе, textarea {
   border: 0;
-  border-bottom: #aaa solid 1px;
+  border-bottom: #ccce5e solid 1px;
 }
 
+input.textе:focus, textarea:focus {
+  border-bottom: #ccce5e solid 1px important;
+}
 
 span.it {
     font-style: italic;
@@ -106,3 +109,4 @@ div.vision {
   margin: 0 auto;
   width: 70%;
 }
+
