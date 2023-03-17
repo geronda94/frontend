@@ -10,11 +10,13 @@
   <body>    
     {% block menu %}
     <div class="menu-header">
-      <ul class="menu">
-        {% for i in menu %}
-          <li><a href="{{url_for(i.get('link'))}}">{{i.get('title')}}</a></li>
-        {% endfor %}
-      </ul>
+      <div class="menu-position">
+        <ul class="menu">
+          {% for i in menu %}
+            <li><a href="{{url_for(i.get('link'))}}">{{i.get('title')}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
     {% endblock %}
 

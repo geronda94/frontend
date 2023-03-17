@@ -4,10 +4,14 @@
 {% endblock menu %}
 
 {% block content %}
-    {{ super() }}
+    
     <div class="vision">
-        <h1>{{ name }}</h1>
-        <h2>{{ text }}</h2>
+        {{ super() }}
+        {% if lst %}
+            {% for i in lst %}
+                <p>{{i}}</p>
+            {% endfor %}            
+        {% endif %}
 
 
     </div>

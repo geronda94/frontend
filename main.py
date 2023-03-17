@@ -6,7 +6,8 @@ menu_dict = [
     {'title':'Главная','link':'index'},
     {'title':'О нас','link':'about'},
     {'title':'Форма','link':'form'},
-    {'title':'frame','link':'frame'}
+    {'title':'frame','link':'frame'},
+    {'title':'css','link':'csss'}
 ]
 
 app = Flask(__name__)
@@ -44,10 +45,15 @@ def menu():
 @app.route('/form', methods=['POST', 'GET'])
 def form():
     if request.method == 'POST':
-        name=request.form['name']
-        message = request.form['message']
-        return redirect (url_for('feedback', code=307, name=name, message=message))
-    
+        if 'agree' in request.form:
+            lst = []
+            lst.append(request.form['fio'])
+            lst.append(request.form['pass'])
+            lst.append(request.form['city'])
+            lst.append('Female' if request.form.get('sex')=="2" else 'Male')
+            lst.append(request.form.get('message'))
+            return render_template('abracadabra.html', title='Введенные значения', menu=menu_dict, lst=lst)
+        
     return render_template('form.html', title='Обратная связь', menu=menu_dict)
 
 
@@ -62,7 +68,9 @@ def feedback():
     
     return render_template('abracadabra.html', name=name, text=message, menu=menu_dict, title='Ответ от формы')
 
-
+@app.route('/csss')
+def csss():
+    return render_template('css.html')
 
 
 if __name__ == '__main__':

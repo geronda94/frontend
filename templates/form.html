@@ -8,11 +8,38 @@
 {% block content %}
     <div class="vision">
         {{ super()  }}
-        <form action="" method="post">
-            <p>Имя: <input type="text" name="name" value=""></p>
-            <p>Сообщение:</p>
-            <textarea name="message" rows="10" cols="25" value=""></textarea>
-            <p><input type="submit" value="send"></p>
+        <form id="reg-form" action="" method="post">
+            <input type="hidden" name="id" value="123456"
+
+            <table border="3">
+                <tr><td>Имя: </td><td><input type="text" name="fio" class="text" value=""></td></tr><br>
+                <tr><td>Пол: </td><td><input type="radio" name="sex" value="1" checked>M
+                <input type="radio" name="sex" value="2">F</td></tr><br>
+                <tr><td>
+                    <p>Введите сообщение</p>
+                    <p><textarea name="message" id="message" class="text"  cols="30" rows="10"></textarea></p>
+                </td></tr>
+                <tr><td>Пароль: </td><td><input type="password" class="text"  name="pass" value=""></td></tr><br>
+                <tr>
+                    <label for="agree-checkbox">
+                    <td colspan="2">
+                    <p><input type="checkbox" name="agree" id="agree-checkbox"> Регистрируясь вы принимаете пользовательсеое соглашение</p>
+                    </td></label>
+                </tr>
+                <tr>
+                    <p>
+                        <td>Выберите город</td><td></td>
+                        <select name="city">
+                            <option value="Moscow">Moscow</option>
+                            <option value="Kiev">Kiev</option>
+                            <option value="London">London</option>
+                            <option value="Chishinau">Chishinau</option>
+                        </select>
+                    </p></td>
+                </tr><br>
+                <tr><td><input type="submit" value="Зарегистрироваться"></td>
+                <td><input type="reset" value="Очистить форму"></td></tr>
+            </table>
         
         </form>
     </div>
