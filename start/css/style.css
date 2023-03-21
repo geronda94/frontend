@@ -340,15 +340,29 @@ a{
 }
 
 .form__bike-price {
-    font-size: 26px;
-    line-height: 100px;
+    font-size: 22px;
     position: absolute;
-    top:0;
+    top:30px;
     left: 0;
     right:0;
     width: 220px;
     height: 100px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff4040;
+    border-radius: 50%;
+}
+
+.form__bike-price::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    border: 1px solid #ff4040;
+    border-radius: 50%;
+    top: 12px;
+    left: 0;
 }
 
 .form__radio-style {
@@ -381,12 +395,46 @@ a{
     cursor: pointer;
 }
 
+.footer {
+    background-color: #131313;
+}
 
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
 
+.footer__link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 15px;    
+}
 
+.footer__social-link +.footer__social-link{
+    margin-left: 26px;
+}
 
+.footer__contacts {
+    color:#fff;
+    font-size: 12px;
+    line-height: 15px;
+}
 
+.footer__contacts-link {
+    display: flex;
+    vertical-align: auto;
+}
 
+.footer__contacts-link+.footer__contacts-link{
+    margin-top: 10px;
+}
+
+.footer__contacts-img {
+    margin-right: 10px;
+}
 
 
 
