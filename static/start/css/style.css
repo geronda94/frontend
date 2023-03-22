@@ -447,6 +447,26 @@ a{
     margin-right: 10px;
 }
 
+@media (max-width:1110px){
+    .bike__inner{
+        flex-wrap: wrap;
+        min-width: 100%;
+    }
+    .bike__text {
+        max-width: 100%;
+    }
+
+    .bike{
+        padding: 0;
+    }
+    .bike__link {
+        margin-top: 30px;
+    }
+
+    .bike__column{
+        margin-bottom: 30px;
+    }
+}
 
 @media(max-width: 991px) {
     .menu {
@@ -489,7 +509,7 @@ a{
 
 @media(max-width:340px){
     .menu{
-        margin-top: 12px;
+        margin-top: 30px;
     }
 
     .menu__link{
