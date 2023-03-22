@@ -467,9 +467,35 @@ a{
         margin-bottom: 30px;
     }
     .bike__column-slider{
-        min-width: 100%;
+        max-width: 100%;
+        margin-left:0;
     }
     .bike__list {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .bike__list-item {
+        min-width: 100px;        
+    }
+
+    .info {
+        padding-top: 0;
+    }
+
+    .info__item + .info__item{
+        padding-top: 50px;
+    }
+
+    .info__img {
+        display: none;
+    }
+
+    .info__list {
+        flex-basis: 100%;
+    }
+
+    .info__item-text {
         max-width: 100%;
     }
 }
@@ -478,8 +504,60 @@ a{
     .menu {
         margin-right: 0;
     }
-}
+    .info {
+        margin-bottom: 70px;
+    }
 
+    .characteristics__inner {
+        flex-wrap: wrap;
+    }
+
+    .characteristics__img{
+        order: -1;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .characteristics__head {
+        margin: 0 0 15px;
+    }
+    .characteristics__items {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+
+    .characteristics__name {
+        flex-basis: 50%;
+    }
+    .characteristics__desc {
+        flex-basis: 50%;
+    }
+
+} 
+
+
+@media(max-width: 670px) {
+    .bike__title {
+        font-size: 44px;
+        line-height: 57px;
+        margin: 30px 0 5px;
+    }
+
+    .bike__subtitle{
+        margin: 0 0 30px;
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .bike__list{
+        flex-wrap: wrap;
+    }
+
+    .bike__list-item{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
 
 @media(max-width: 640px) {
     .header__inner{
@@ -503,7 +581,7 @@ a{
     }
 }
 
-@media(max-width:450px){
+@media(max-width:460px){
     .menu__list{
         justify-content: space-between;      
     }
@@ -511,7 +589,18 @@ a{
     .menu__link{
         padding: 25px 5px;
     }
+
+    .bike__link {
+        display: inline-block;
+        padding: 15px;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.9em;
+    }
 }
+
+
 
 @media(max-width:340px){
     .menu{
