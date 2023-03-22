@@ -466,6 +466,12 @@ a{
     .bike__column{
         margin-bottom: 30px;
     }
+    .bike__column-slider{
+        min-width: 100%;
+    }
+    .bike__list {
+        max-width: 100%;
+    }
 }
 
 @media(max-width: 991px) {
