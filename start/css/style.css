@@ -1,7 +1,11 @@
-м*, *::after, *::before {
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
+
+body {
+    scroll-behavior: smooth;
+}
 
 p {
     margin:0;
@@ -116,6 +120,10 @@ a{
     letter-spacing: 1.1em;
 }
 
+.bike__link:hover {
+    background-color: #ff4040;
+    transition:  all .3s;
+}
 
 .bike-slider .slick-dots {
     right: 0;
@@ -395,6 +403,10 @@ a{
     cursor: pointer;
 }
 
+.form__btn:hover {
+    background-color:#ff4040 ;
+}
+
 .footer {
     background-color: #131313;
 }
@@ -425,22 +437,56 @@ a{
 
 .footer__contacts-link {
     display: flex;
-    vertical-align: auto;
+    align-items: center; /* по вертикали */
 }
-
 .footer__contacts-link+.footer__contacts-link{
     margin-top: 10px;
 }
 
-.footer__contacts-img {
+.footer__contact-img {
     margin-right: 10px;
 }
 
 
+@media(max-width: 991px) {
+    .menu {
+        margin-right: 0;
+    }
+}
 
 
+@media(max-width: 640px) {
+    .header__inner{
+        text-align: center;
+        display: block;
 
+    }
+    .menu {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    .menu__list{
+        justify-content: space-evenly;
+    }
+    .menu__item + .menu__item{
+        padding-left: 0;
+    }
 
+    .menu__link{
+        padding: 25px 9px;
+    }
+}
+
+@media(max-width:450px){
+    .menu__list{
+        justify-content: space-between;
+        
+    }
+
+    .menu__link{
+        padding: 25px 5px;
+    }
+}
 
 
 
