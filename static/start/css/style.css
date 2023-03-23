@@ -459,6 +459,18 @@ a{
     .bike{
         padding: 0;
     }
+
+    .characteristics {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .slider__img {
+        object-fit: cover;
+        height: 400px;
+    }
+
+
     .bike__link {
         margin-top: 30px;
     }
@@ -498,7 +510,7 @@ a{
     .info__item-text {
         max-width: 100%;
     }
-}
+} 
 
 @media(max-width: 991px) {
     .menu {
@@ -507,6 +519,8 @@ a{
     .info {
         margin-bottom: 70px;
     }
+
+    
 
     .characteristics__inner {
         flex-wrap: wrap;
@@ -517,6 +531,8 @@ a{
         width: 100%;
         margin-bottom: 30px;
     }
+
+
 
     .characteristics__head {
         margin: 0 0 15px;
@@ -534,6 +550,13 @@ a{
     }
 
 } 
+
+
+@media(max-width:830px){
+    .slider__img {
+        height: 350px;
+    }
+}
 
 
 @media(max-width: 670px) {
@@ -557,6 +580,10 @@ a{
         width: 50%;
         margin-bottom: 15px;
     }
+
+    .slider__img {
+        height: 300px;
+    }
 }
 
 @media(max-width: 640px) {
@@ -579,7 +606,32 @@ a{
     .menu__link{
         padding: 25px 9px;
     }
+    .slider__img {
+        height: 300px;
+    }
+    .slider__item{
+        padding-left: 20px;
+    }
 }
+
+@media(max-width: 600px){
+    .slider__img {
+        height: 240px;
+    }
+
+}
+
+
+@media(max-width: 520px){
+    .slider__img {
+        height: 230px;
+    }
+    .slider__item{
+        padding-left: 15px;
+    }
+
+}
+
 
 @media(max-width:460px){
     .menu__list{
@@ -598,9 +650,23 @@ a{
         line-height: 20px;
         letter-spacing: 0.9em;
     }
+    .slider__img {
+        height: 190px;
+    }
+    .slider__item{
+        padding-left: 10px;
+    }
+
 }
 
-
+@media(max-width:410px){
+    .slider__img {
+        height: 190px;
+    }
+    .slider__item{
+        padding-left: 5px;
+    }
+}
 
 @media(max-width:340px){
     .menu{
@@ -611,8 +677,15 @@ a{
         font-size: 12px;
         padding: 15px 5px;
     }
+    .slider__img {
+        height: 140px;
+    }
 }
-
+@media(max-width:290px){
+    .slider__img {
+        height: 120px;
+    }
+}
 
 
 
