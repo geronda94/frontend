@@ -31,7 +31,13 @@ a{
     color: inherit;
 }
 
-
+.info__item-title::after{
+    content: 'Текст который размешается при помощи псевдо-элемента ::after';
+    font-size: 7px;
+}
+.hidden__span {
+    user-select: all;
+}
  
 .container{
     max-width: 1220px;
