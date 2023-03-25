@@ -1,0 +1,39 @@
+
+
+span, div {
+    border: rgb(84, 18, 150) solid 3px;
+    margin:30px;
+    padding: 20px;
+}
+
+.test {
+
+    margin:30px;
+}
+h4 {
+    padding: 100px 0;
+}
+
+.mar {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+
+span {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
