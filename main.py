@@ -75,7 +75,7 @@ def csss():
 
 @app.route('/start')
 def start():
-    return render_template('start/index.html')
+    return render_template('start/cssexp.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
