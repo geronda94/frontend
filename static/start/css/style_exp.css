@@ -1,38 +1,30 @@
 
+body {
+    height: 1000px;
+}
+
 
 span, div {
     border: rgb(84, 18, 150) solid 3px;
-    margin:30px;
-    padding: 20px;
+} 
+.inner {
+    border: #053b20 solid 3px;
+    height: 400px;
+    width: 40%;
+    margin:20px;
+    position: relative;
 }
 
 .test {
-
-    margin:30px;
-}
-h4 {
-    padding: 100px 0;
-}
-
-.mar {
-    margin-top: 50px;
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    color: red;
+    width: 200px;
+    min-height: 20px;
     display: inline-block;
     box-sizing: border-box;
 }
-
-
-
-span {
-    margin-top: 50px;
-    width: 100px;
-    height: 100px;
-}
-
-
-
-
 
 
 
