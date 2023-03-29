@@ -5,6 +5,7 @@ menu_dict = [
     {'title':'О нас','link':'about'},
     {'title':'Форма','link':'form'},
     {'title':'frame','link':'frame'},
+    {'title':'styles','link':'styles'},
     {'title':'css','link':'csss'}
 ]
 
@@ -71,9 +72,12 @@ def csss():
     return render_template('css.html')
 
 
-@app.route('/start')
-def start():
+@app.route('/styles')
+def styles():
     return render_template('start/cssexp.html')
+
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
