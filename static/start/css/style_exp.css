@@ -14,7 +14,55 @@ body {
 
 .box {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 150px 100px 75px ;
+  grid-template-columns: [one] 320px [item2] 300px [item3] 350px [item4];
+  grid-template-rows:repeat(6, 70px) ;
   gap:5px 10px;
 }
+
+.item-1 {
+  grid-column: one / item4;
+  grid-row: 1/ span 2;
+
+}
+
+
+
+
+.wrapper{
+  margin-top: 50px;
+  display:grid;
+  grid-template-areas: 
+  "header header header header"
+  "main main main aside"
+  "footer footer footer footer";
+  gap:5px;
+}
+
+.element {
+  border: 2px solid #57a152;
+  background-color: #131313;
+  color:#fff;
+  font-size: 48px;
+  padding: 15px;
+  text-align: center;
+  
+}
+
+.header {
+  grid-area: header;
+  height: 300px;
+}
+.main{
+  grid-area: main;
+  height: 500px;
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+  height: 50px;
+}
+
+
+
