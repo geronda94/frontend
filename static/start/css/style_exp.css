@@ -11,3 +11,10 @@ body {
   color:#fff;
   padding: 15px;
 }
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 150px 100px 75px ;
+  gap:5px 10px;
+}
