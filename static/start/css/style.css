@@ -360,6 +360,7 @@ html{
   margin-bottom: 110px;
   text-align: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 .buy__img {
@@ -369,15 +370,141 @@ html{
 
 .buy__bg{
   position: absolute;
-  width: 100% ;
+  top:-30px;
   font-size: 300px;
+  font-weight: 700;
   align-self: center ;
+  line-height: 400px;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.1;
+  opacity: 0.2;
+  z-index: -1;
+  animation: line-text 5s linear 0.1s infinite;
 }
 
-.buy .buy-btn{
-  margin: 0 auto 30px auto;
+@keyframes line-text {
+  from {
+    transform: translateX(115%);
+    transform-origin: left center;
+  }
+  to{
+    transform: translateX(-115%);
+    transform-origin: right center;
+  }
 }
+ 
+.buy .buy-btn{
+  margin: 30px auto 10px auto;
+}
+
+.equipment{
+  margin-bottom: 100px;
+}
+
+.equipment__title{
+  margin-bottom: 50px;
+}
+
+.equipment__box{
+ display: grid;
+ grid-template-columns: 2fr repeat(2, 1fr);
+ grid-template-rows: repeat(2, 1fr);
+ gap:40px 20px;
+ }
+
+
+
+.equipment__box-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.equipment__box-item {
+  position: relative;
+}
+.equipment__box-item--1 {
+  grid-row: 1/-1;
+}
+
+.equipment__box img {
+  height: 100%;
+}
+
+.equipment__box-text{
+  position: absolute;
+  bottom:-25px;
+}
+
+.promo {
+  margin-bottom: 100px;
+}
+
+.promo__inner {
+  background-image: url("../images/promo.jpg");
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+}
+
+.promo__btn {
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 80px;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.accessories__text {
+  margin: 30px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  text-transform: uppercase;
+
+/* gradient */
+
+background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.accessories__items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.accessories__item {
+  border: 1px solid #BC10D8;
+  padding:20px;
+
+}
+
+.accessories__item-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.accessories__item-text {
+
+}
+
+
+
+
+
+
+
