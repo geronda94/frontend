@@ -361,6 +361,7 @@ html{
   text-align: center;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .buy__img {
@@ -474,36 +475,105 @@ html{
   font-size: 36px;
   line-height: 41px;
   text-transform: uppercase;
-
-/* gradient */
-
-background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .accessories__items{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 124px;
 }
 
 .accessories__item {
-  border: 1px solid #BC10D8;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80,0,250,0.93)100%) 1;
   padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.accessories__item-img{
+  margin-bottom: 10px;
 }
 
 .accessories__item-title {
   font-size: 24px;
   line-height: 28px;
+  color: #070707;
+  min-height: 67px;
 }
 
 .accessories__item-text {
+  margin-bottom: 35px;
+  margin-top: auto;
+}
 
+.accessories__item-price {
+  font-weight: 700;
+  color: #070707;
+  margin-bottom: 20px;
+  margin-top: auto;
 }
 
 
+.accessories__item-btn {
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80,0,250,0.93)100%) 1;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  width: 100%;
+}
 
+.contacts {
+  margin-bottom: 100px;
+}
+.container {
+
+}
+
+.contacts__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #070707;
+  margin-bottom: 10px;
+}
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.contacts__form {
+  flex-basis: 600px;
+}
+.form {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  border:none;border-bottom: 1px solid #cacad6;
+  padding: 5px;
+}
+.form__btn {
+
+}
+.contacts__text {
+  font-size: 13px;
+}
+.contacts__email {
+  font-size: 16px;
+  line-height: 18px;
+}
 
 
 
