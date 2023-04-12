@@ -693,9 +693,12 @@ html{
   .container {
     height: 764px;
   } 
+  .game {
+    height: 950px;
+  }
 }
   
-@media (max-width:568px) {
+@media (max-width:570px) {
   .game__inner {
     grid-template-columns: repeat(1, 1fr);
     gap:15px;
@@ -703,6 +706,9 @@ html{
   .container {
     height: 740px;
   } 
+  .game {
+    height: 1250px;
+  }
 }
 
 
